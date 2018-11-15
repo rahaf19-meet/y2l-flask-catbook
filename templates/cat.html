@@ -17,15 +17,16 @@
   </head>
 <body>
   <!--Navbar-->
-<nav class="navbar navbar-dark fb-color">
-<a class="text-logo navbar-brand">Catbook</a>
-<form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-    <button class="btn btn-outline-light" type="submit">Search</button>
+  <nav class="navbar navbar-dark fb-color">
+    <a class="text-logo navbar-brand">Catbook</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-light" type="submit">Search</button>
+      <a href={{ url_for("new_cat") }} class="btn btn-outline-light" class="button">New cat?</a>
     </form>
-</nav>
+  </nav>
   <!--Navbar End-->
-<img class="header_img mx-auto d-block" src="{{url_for('static', filename='images/catbook_logo.jpg')}}">
+  <img class="header_img mx-auto d-block" src="{{url_for('static', filename='images/catbook_logo.jpg')}}">
 
 <h1>the name of the cat</h1>
 <h1>{{cat.name}}</h1>
